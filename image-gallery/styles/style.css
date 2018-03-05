@@ -1,0 +1,68 @@
+.thumb-bar img{
+	width: 100px;
+	height: 100px;
+}
+.thumb-bar img:hover{
+	cursor: pointer;
+	opacity: 0.6;
+	box-shadow: 1px 6px 5px rgba(0, 0, 0, .5);
+	transform: scale(1.03999);
+}
+.container{
+	text-align: center;
+	min-width: 600px;
+	margin:  100px auto auto; 
+}
+.slidder-btn{
+  position: absolute;
+  padding: 0px 8px;
+  bottom: 50%;
+  border: none;
+  background: #0f6b6b;
+  border-radius: 50%;
+  z-index: 9;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.slidder-btn:hover{
+	box-shadow: 1px 2px 10px #f7f5f5;
+}
+.thumb-bar{
+	display: inline-block;
+	overflow-x: scroll;
+	white-space: nowrap;
+	max-width: 500px;
+}
+#left-btn.slidder-btn{
+	left:0;
+}
+#right-btn.slidder-btn{
+	right:0;
+}
+.thumb-bar-container{
+	position: relative;
+	display: inline-block;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f9f9f9; 
+    display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f9f9f9; 
+   display: none; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
